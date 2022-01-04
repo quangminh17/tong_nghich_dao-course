@@ -1,0 +1,16 @@
+title: tong_nghich_dao
+description: tính nghịch đảo
+template:
+  repo: tong_nghich_dao-template
+  name: tong_nghich_dao
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
